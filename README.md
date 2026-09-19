@@ -23,11 +23,28 @@ is restored.
 
 ## Install
 
+As a pi package (recommended):
+
 ```bash
-ln -sfn "$PWD/integrations/pi/usage-footer.ts" ~/.pi/agent/extensions/usage-footer.ts
+pi install git:github.com/enten0103/pi-usage-footer
 ```
 
-Then in pi: `/reload` (or restart), and select a supported model.
+Or try it for one run without installing:
+
+```bash
+pi -e git:github.com/enten0103/pi-usage-footer
+```
+
+Then in pi: `/reload` (or restart), and select a supported model. Check with `pi list`.
+
+<details>
+<summary>Manual install (local checkout)</summary>
+
+```bash
+ln -sfn "$PWD/usage-footer.ts" ~/.pi/agent/extensions/usage-footer.ts
+```
+
+</details>
 
 ## Command
 

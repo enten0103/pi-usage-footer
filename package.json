@@ -1,0 +1,21 @@
+{
+  "name": "pi-usage-footer",
+  "version": "1.0.0",
+  "description": "pi extension: show the active provider's quota/balance (Kimi Code, DeepSeek) inline in the footer",
+  "keywords": ["pi-package", "pi-extension", "usage", "quota", "kimi", "deepseek"],
+  "license": "MIT",
+  "author": "enten0103",
+  "homepage": "https://github.com/enten0103/pi-usage-footer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enten0103/pi-usage-footer.git"
+  },
+  "files": ["usage-footer.ts", "README.md", "LICENSE"],
+  "pi": {
+    "extensions": ["./usage-footer.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
